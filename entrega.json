@@ -1536,5 +1536,10 @@
         "alvo": "mcp/recibo-cliente.json"
       }
     ]
+  },
+  "validacao": {
+    "gate": "validar-frentes-v1",
+    "aprovado": true,
+    "categorias": []
   }
 }
