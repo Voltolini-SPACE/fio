@@ -1,0 +1,21 @@
+{
+  "alvo": "referencias/fio-origem.json",
+  "alvo_sha256": "7b17975d109fc7776d03cf547e50d73ce04533a052eb8478d1cff96d246fe5a2",
+  "contrato": "# Contrato do produto Fio\n\nGateway de WhatsApp auto-hospedado, derivado de um projeto MIT, com API HTTP e servidor MCP\npróprios. O produto é entregue como código-fonte instalável, três edições de marca e prova de\nfuncionamento — não como demonstração estática.\n\n## O que o produto faz\n\n- Recebe e envia mensagens de WhatsApp por sessões autenticadas.\n- Expõe API HTTP documentada em `openapi.json` e servidor MCP em `/mcp` (Streamable HTTP + SSE).\n- Autentica clientes por `x-api-key`, semeada no primeiro boot em `data/.api-key` com permissão 0600.\n- Roda com `npm ci && npm run build && node dist/main`, sem serviço externo obrigatório em modo local.\n\n## Identidade\n\n- Nome do produto na edição principal: **Fio**. Edições de distribuição: **Fio Sandbox** e **Fio Bridge**.\n- A marca é nova: nome, paleta, tipografia e textos não podem reproduzir a marca do projeto de origem.\n- O crédito à origem vive em `NOTICE`, `CREDITS.md` e `ORIGEM.json`; a licença MIT é preservada.\n\n## Regras de entrega\n\n1. O pacote contém fonte, `package-lock.json`, configuração de build, `openapi.json`, Dockerfile e\n   arquivos de composição; `node_modules` e `dist` nunca entram no inventário.\n2. A cópia não traz painel web nem SDK do projeto de origem; a paridade declara essas exclusões.\n3. A prova de MCP é um recibo gerado por cliente externo: `initialize`, `tools/list` e uma\n   `tools/call` real, com o `serverInfo` do produto.\n4. Manual e brandbook são legíveis por quem nunca viu o projeto de origem.\n5. Divergência entre o prometido e o entregue reprova a entrega; a paridade não promete 100%.",
+  "id": "REA-V2-FIO",
+  "marca": {
+    "primaria": "#0F5132",
+    "fundo": "#EAF3EE",
+    "tipografia": "Courier New, monospace",
+    "simbolo": "fio"
+  },
+  "nome": "Fio",
+  "perfil": "gateway-whatsapp",
+  "slug": "voltolini-fio",
+  "topologia": "workspace-unico-com-andares",
+  "motor": "gpt-6-luna",
+  "esforco": "none",
+  "frente": "inventario",
+  "prompt": "Você constrói a edição Fio do produto descrito no contrato, limitado à frente inventario. Alvo autorizado: referencias/fio-origem.json (integridade verificada por hash). Identidade: primária #0F5132, fundo #EAF3EE, tipografia Courier New, monospace. Entregue código, README, BRANDBOOK e os recibos da frente; não invente dados do alvo.\n\n# Contrato do produto Fio\n\nGateway de WhatsApp auto-hospedado, derivado de um projeto MIT, com API HTTP e servidor MCP\npróprios. O produto é entregue como código-fonte instalável, três edições de marca e prova de\nfuncionamento — não como demonstração estática.\n\n## O que o produto faz\n\n- Recebe e envia mensagens de WhatsApp por sessões autenticadas.\n- Expõe API HTTP documentada em `openapi.json` e servidor MCP em `/mcp` (Streamable HTTP + SSE).\n- Autentica clientes por `x-api-key`, semeada no primeiro boot em `data/.api-key` com permissão 0600.\n- Roda com `npm ci && npm run build && node dist/main`, sem serviço externo obrigatório em modo local.\n\n## Identidade\n\n- Nome do produto na edição principal: **Fio**. Edições de distribuição: **Fio Sandbox** e **Fio Bridge**.\n- A marca é nova: nome, paleta, tipografia e textos não podem reproduzir a marca do projeto de origem.\n- O crédito à origem vive em `NOTICE`, `CREDITS.md` e `ORIGEM.json`; a licença MIT é preservada.\n\n## Regras de entrega\n\n1. O pacote contém fonte, `package-lock.json`, configuração de build, `openapi.json`, Dockerfile e\n   arquivos de composição; `node_modules` e `dist` nunca entram no inventário.\n2. A cópia não traz painel web nem SDK do projeto de origem; a paridade declara essas exclusões.\n3. A prova de MCP é um recibo gerado por cliente externo: `initialize`, `tools/list` e uma\n   `tools/call` real, com o `serverInfo` do produto.\n4. Manual e brandbook são legíveis por quem nunca viu o projeto de origem.\n5. Divergência entre o prometido e o entregue reprova a entrega; a paridade não promete 100%.",
+  "estrategia": "derivar"
+}

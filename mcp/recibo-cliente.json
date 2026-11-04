@@ -1,0 +1,66 @@
+{
+  "gate": "mcp-cliente-externo-v1",
+  "servidores": {
+    "fio": {
+      "confirmado": true,
+      "endpoint": "http://127.0.0.1:36857/mcp",
+      "transporte": "http+sse",
+      "protocolo": "2025-06-18",
+      "server_info": {
+        "name": "voltolini-fio",
+        "version": "1.0.0"
+      },
+      "ferramentas": [
+        "SessionFindAll",
+        "SessionFindOne",
+        "SessionGetChats",
+        "SessionGetStats",
+        "SessionGetPresence",
+        "MessageList",
+        "MessageHistory",
+        "MessageGetReactions",
+        "ContactFindAll",
+        "ContactFindOne",
+        "ContactCheckNumber",
+        "ContactResolvePhone",
+        "ContactGetProfilePicture",
+        "GroupFindAll",
+        "GroupFindOne",
+        "GroupGetInviteCode",
+        "WebhooksList",
+        "WebhookFindBySession",
+        "WebhookFindOne",
+        "LabelFindAll",
+        "LabelFindOne",
+        "LabelListChats",
+        "LabelListForChat",
+        "AutomationRuleFindAll",
+        "AutomationRuleFindOne",
+        "MessageSearch"
+      ],
+      "chamadas": [
+        {
+          "metodo": "initialize",
+          "ok": true
+        },
+        {
+          "metodo": "tools/list",
+          "ok": true,
+          "total": 26
+        },
+        {
+          "metodo": "tools/call",
+          "ferramenta": "SessionFindAll",
+          "ok": true
+        }
+      ],
+      "producao": {
+        "npm": "ci --ignore-scripts",
+        "build": "npm run build",
+        "boot": "node dist/main",
+        "health": "/api/health 200"
+      },
+      "observado_em": "2026-11-04T08:38:00-0300"
+    }
+  }
+}

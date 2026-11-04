@@ -1,0 +1,42 @@
+{
+  "status": "derivado",
+  "fonte": "/home/voltolini-space/AI/alvos/openwa",
+  "origem": "https://github.com/rmyndharis/OpenWA",
+  "commit": "fb3e15e0faabce5e94bbd20368ea091dc9f5e90e",
+  "licenca": "MIT",
+  "sha256_origem_json": "7b17975d109fc7776d03cf547e50d73ce04533a052eb8478d1cff96d246fe5a2",
+  "copiados": 1400,
+  "ignorados": [
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "mudancas": {
+    "package.name": [
+      "openwa",
+      "voltolini-fio"
+    ],
+    "src/main.ts": [
+      "banner"
+    ],
+    "src/app.module.ts": [
+      "serverInfo"
+    ],
+    "src/modules/mcp/mcp.server.ts": [
+      "serverInfo"
+    ]
+  },
+  "documentos": [
+    "README.md",
+    "MANUAL.md",
+    "BRANDBOOK.md",
+    "PARIDADE.md",
+    "LICENSE",
+    "NOTICE",
+    "CREDITS.md",
+    "ORIGEM.json"
+  ],
+  "rotas": 164
+}

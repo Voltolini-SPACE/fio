@@ -1,0 +1,20 @@
+{
+ "origem": "https://github.com/rmyndharis/OpenWA",
+ "tipo": "git",
+ "commit": "fb3e15e0faabce5e94bbd20368ea091dc9f5e90e",
+ "importado_em": "2026-11-04T11:20:14+00:00",
+ "licenca": {
+  "caminho": "/home/voltolini-space/AI/alvos/openwa",
+  "spdx": "MIT",
+  "familia": "permissiva",
+  "modos": {
+   "fork": true,
+   "clean_room": true,
+   "fechado": true
+  },
+  "evidencia": [
+   "LICENSE: MIT"
+  ],
+  "alertas": []
+ }
+}
